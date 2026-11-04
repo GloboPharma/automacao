@@ -23,10 +23,7 @@ mantém o app acessível só neste computador, pois a matriz lista grupos de ace
 Todos os resultados podem ser baixados em CSV ou Excel.
 
 ## Dados
-O app lê **somente a cópia local** em `dados/`. O original fica em
-`G:\TECNOLOGIA_INFORMACAO\04_PUBLICA_TI\Estagiario\Treinamento\GERENCIAMENTO DE USUARIO_OK`
-e não é alterado. Quando o original mudar, substitua a cópia manualmente.
-A planilha não é versionada (`dados/*.xlsx` está no `.gitignore`).
+O app lê **somente a cópia local** em `dados/`.
 
 ## Observações
 - A chave de um cargo é departamento + cargo (o mesmo cargo existe em vários departamentos).
