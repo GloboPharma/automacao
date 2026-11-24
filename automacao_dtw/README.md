@@ -23,17 +23,31 @@ pip install -r requirements.txt
 
 ## 2. Configuração – arquivo `.env`
 
-Na mesma pasta do script, preencha o `.env`:
+Na mesma pasta do script, copie o modelo e preencha:
 
-```ini
-SAP_HANA_HOST=10.0.0.10
-SAP_HANA_PORTA=30015
-SAP_HANA_USUARIO=USR_LEITURA
-SAP_HANA_SENHA=
-SAP_HANA_SCHEMA=SBO_GLOBO_TESTE
+```bat
+copy .env.example .env
 ```
 
-- Deixe `SAP_HANA_SENHA` vazio: a senha é pedida no terminal.
+O `.env` fica fora do Git (`.gitignore`); só o `.env.example`, sem senha, vai para o repositório.
+
+```ini
+SAP_HANA_HOST=SERVER_HOST
+SAP_HANA_PORTA=SERVER_PORT
+SAP_HANA_USUARIO=DB_USER
+SAP_HANA_SENHA=DB_PASSWORD
+SAP_HANA_SCHEMA=COMPANY_DB
+```
+
+| Variável | Substitua por |
+|---|---|
+| `SERVER_HOST` | IP ou nome do servidor HANA |
+| `SERVER_PORT` | Porta SQL (instância 00: `30015`; multitenant: porta do tenant) |
+| `DB_USER` | Usuário do banco (de preferência só leitura) |
+| `DB_PASSWORD` | Senha — ou deixe o valor modelo/vazio para digitar no terminal |
+| `COMPANY_DB` | Schema = nome do banco da empresa no SAP |
+
+- Valores-modelo não preenchidos são ignorados pelo script; com a senha assim, ela é pedida no terminal.
 - Para alternar entre **teste** e **produção**, troque só `SAP_HANA_SCHEMA`.
 - O `.env` contém dados de acesso: não compartilhe nem versione.
 
