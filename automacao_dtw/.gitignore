@@ -1,0 +1,41 @@
+# ==================================================================
+# automacao_dtw - arquivos que NÃO podem ir para o GitHub
+# ==================================================================
+
+# ---- Credenciais / configuração local ----
+.env
+.env.*
+!.env.example
+env
+env.txt
+*.ini
+*.pem
+*.key
+
+# ---- Dados da empresa (planilhas de entrada e saídas do DTW) ----
+DTW_*/
+*.xlsx
+*.xlsm
+*.xls
+*.csv
+*.txt
+!requirements.txt
+~$*
+
+# ---- Ambiente Python ----
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# ---- Logs ----
+*.log
+
+# ---- Editor / sistema ----
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
