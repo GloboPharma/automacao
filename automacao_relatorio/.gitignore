@@ -14,3 +14,7 @@ htmlcov/
 
 .DS_Store
 Thumbs.db
+# Planilhas locais de consulta/validacao (nao versionar)
+*.xlsx
+*.xls
+*.xlsm

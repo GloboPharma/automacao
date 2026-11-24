@@ -25,6 +25,14 @@ Todos os resultados podem ser baixados em CSV ou Excel.
 ## Dados
 O app lê **somente a cópia local** em `dados/`.
 
+A pasta `dados/` já vem vazia no repositório, mas a planilha **não é versionada**
+(`dados/*.xlsx` está no `.gitignore`). Depois de clonar, copie o arquivo
+`INF-000007-MATRIZ DE ACESSOS X CARGOS.xlsx` (fornecido pela TI) para dentro de `dados/`
+**antes de rodar o app**, mantendo exatamente esse nome. Sem ele, o app mostra
+"Planilha não encontrada".
+
+Para atualizar a matriz, substitua o arquivo em `dados/` e recarregue a página do navegador.
+
 ## Observações
 - A chave de um cargo é departamento + cargo (o mesmo cargo existe em vários departamentos).
 - Cargo repetido no mesmo departamento (colunas distintas) aparece com o sufixo `[col. XX]`.

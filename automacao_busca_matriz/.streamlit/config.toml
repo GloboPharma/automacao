@@ -1,0 +1,11 @@
+# Tema baseado no Manual de Apresentações Globo Pharma (paleta oficial).
+[theme]
+base = "light"
+primaryColor = "#FA4616"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F2F2F2"
+textColor = "#2D2D2D"
+font = "sans serif"
+
+[client]
+toolbarMode = "viewer"
